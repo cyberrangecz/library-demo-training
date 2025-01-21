@@ -1,4 +1,4 @@
-# For more details about APG Variables see https://muni-kypo-crp.gitlab-pages.ics.muni.cz/kypo-crp-docs/user-guide-advanced/sandboxes/apg-variables/
+# For more details about APG Variables see https://docs.platform.cyberrange.cz/user-guide-advanced/sandboxes/apg-variables/
 
 telnet_port:
     type: port
