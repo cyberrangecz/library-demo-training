@@ -45,3 +45,24 @@ router_mappings:
     ip: 192.168.30.1
 
 groups: []
+
+monitoring_targets_tcp:
+  - node: router
+    targets:
+      - port: 22
+        interface: eth0
+      - port: 22
+        address: 192.168.30.0/24
+
+monitoring_targets_icmp:
+  - node: server
+    targets:
+      - interface: eth0
+  - node: client
+    targets:
+      - address: 192.168.30.5
+
+monitoring_targets_http:
+  targets:
+    - url: https://192.168.20.5
+      check_string: "Hello"
